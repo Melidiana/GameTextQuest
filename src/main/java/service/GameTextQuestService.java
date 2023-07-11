@@ -21,21 +21,21 @@ public class GameTextQuestService {
                     result.setMessage("К сожалению ты струсил, капитан должен быть смелее. Поражение.");
                     result.setOptions(new String[]{});
                     result.setShowImage1(true);
-                    result.setFinished(true);
                     break;
                 case "книга о навигации":
-                    result.setMessage("Хороший выбор! Книга о навигации содержит карты и планетарные данные и будет" +
+                    result.setMessage("Хороший выбор! Книга о навигации содержит карты и планетарные данные и будет " +
                             "очень полезна во время космического путешествия. При выходе из каюты ты встречаешь члена экипажа, " +
                             "который сообщает тебе о проблеме с двигателем. Что ты решишь сделать?");
                     result.setOptions(new String[]{"зайти в технический отсек и разобраться с проблемой",
                             "продолжить свой путь и игнорировать проблему"});
+                    result.setOptions(new String[]{});
+                    result.setShowImage1(true);
                     break;
                 case "книга с рассказами":
                     result.setMessage("Книга с рассказами может быть интересной, но она не поможет тебе " +
                             "в твоем космическом приключении. Поражение.");
                     result.setOptions(new String[]{});
                     result.setShowImage1(true);
-                    result.setFinished(true);
                     break;
                 case "зайти в технический отсек и разобраться с проблемой":
                     result.setMessage("Отличный выбор! Ты решил самостоятельно разобраться с проблемой и найти способ " +
@@ -61,7 +61,6 @@ public class GameTextQuestService {
                             "контроля над ситуацией. Поражение.");
                     result.setOptions(new String[]{});
                     result.setShowImage1(true);
-                    result.setFinished(true);
                     break;
                 case "приблизиться и исследовать объект":
                     result.setMessage("Отличный выбор! Ты решаешь исследовать незнакомый объект и расширить свои знания " +
@@ -75,7 +74,6 @@ public class GameTextQuestService {
                             "важных открытий. Поражение.");
                     result.setOptions(new String[]{});
                     result.setShowImage1(true);
-                    result.setFinished(true);
                     break;
                 case "ответить на сигнал и отправить команду для спасения":
                     result.setMessage("Отличное решение! Ты решил помочь и отправить команду для спасения затерянного " +
@@ -86,12 +84,10 @@ public class GameTextQuestService {
                     result.setMessage("Проигнорирование сигнала SOS может иметь негативные последствия. Поражение.");
                     result.setOptions(new String[]{});
                     result.setShowImage1(true);
-                    result.setFinished(true);
                     break;
                 default:
                     result.setMessage("Ошибка: Неправильный выбор.");
                     result.setOptions(new String[]{});
-                    result.setFinished(true);
             }
         }
 

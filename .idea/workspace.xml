@@ -9,26 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GameTextQuest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/GameTextQuestResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/GameTextQuestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/enterName.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/greeting.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/loss.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/name.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/space-port.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/victory.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/playGame.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
+    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="add classes, packages and jsp">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameTextQuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameTextQuestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,11 +181,23 @@
       <option name="presentableId" value="Default" />
       <updated>1689072222776</updated>
       <workItem from="1689072224174" duration="5707000" />
-      <workItem from="1689078259133" duration="2369000" />
+      <workItem from="1689078259133" duration="4452000" />
     </task>
+    <task id="LOCAL-00001" summary="add classes, packages and jsp">
+      <created>1689080980261</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689080980262</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add classes, packages and jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add classes, packages and jsp" />
   </component>
 </project>

@@ -38,7 +38,7 @@ public class GameTextQuestServlet extends HttpServlet {
         String playerName = (String) request.getSession().getAttribute("playerName");
 
         if (playerName == null || playerName.isEmpty()) {
-            return;
+            request.getSession().setAttribute("playerName", playerName);
         }
 
         String answer = request.getParameter("answer");
