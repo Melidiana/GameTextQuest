@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="add classes, packages and jsp">
+    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="fixed code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/GameTextQuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameTextQuestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ПК/IdeaProjects/GameTextQuest/src/main/webapp/images",
+    "last_opened_file_path": "C:/Users/ПК/IdeaProjects/GameTextQuest/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,6 +78,8 @@
       <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main\webapp\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main\webapp" />
+      <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main\webapp\views" />
       <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main" />
     </key>
   </component>
@@ -181,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689072222776</updated>
       <workItem from="1689072224174" duration="5707000" />
-      <workItem from="1689078259133" duration="4452000" />
+      <workItem from="1689078259133" duration="8453000" />
     </task>
     <task id="LOCAL-00001" summary="add classes, packages and jsp">
       <created>1689080980261</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689080980262</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed code">
+      <created>1689086909334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689086909334</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add classes, packages and jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="add classes, packages and jsp" />
+    <MESSAGE value="fixed code" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed code" />
   </component>
 </project>

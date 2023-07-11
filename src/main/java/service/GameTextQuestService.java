@@ -28,8 +28,6 @@ public class GameTextQuestService {
                             "который сообщает тебе о проблеме с двигателем. Что ты решишь сделать?");
                     result.setOptions(new String[]{"зайти в технический отсек и разобраться с проблемой",
                             "продолжить свой путь и игнорировать проблему"});
-                    result.setOptions(new String[]{});
-                    result.setShowImage1(true);
                     break;
                 case "книга с рассказами":
                     result.setMessage("Книга с рассказами может быть интересной, но она не поможет тебе " +
@@ -48,7 +46,6 @@ public class GameTextQuestService {
                     result.setMessage("Игнорирование проблемы с двигателем может привести к серьезным последствиям. Поражение.");
                     result.setOptions(new String[]{});
                     result.setShowImage1(true);
-                    result.setFinished(true);
                     break;
                 case "использовать инструменты и знания для починки":
                     result.setMessage("Отлично! Ты применяешь свои навыки и знания, чтобы успешно устранить поломку. " +
