@@ -7,14 +7,23 @@
     </title>
     <style>
         img {
-            max-width: 700px;
-            max-height: 700px;
+            max-width: 850px;
+            max-height: 850px;
         }
+
         h1 {
             font-size: 20px;
             color: blue;
         }
+
         .section-container {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .section-container1 {
             border: 2px solid black;
             display: inline-block;
             padding: 10px;
@@ -24,14 +33,16 @@
 </head>
 <body>
 <div class="section-container">
-    <img src="images/name.jpg" alt="Name Image">
     <h1>Представьтесь пожалуйста:</h1>
-    <form action="game" method="post">
+    <form action="game" method="POST">
         <label>
             <input type="text" name="playerName">
         </label>
         <button type="submit">Далее</button>
     </form>
+</div>
+<div class="section-container1">
+    <img src="images/name.jpg" alt="Name Image">
 </div>
 </body>
 </html>

@@ -13,6 +13,5 @@
     <servlet-name>GameTextQuestServlet</servlet-name>
     <url-pattern>/game</url-pattern>
   </servlet-mapping>
-
 </web-app>
 

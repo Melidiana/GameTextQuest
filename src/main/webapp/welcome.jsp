@@ -26,12 +26,19 @@
             font-size: 14px; /* Размер текста */
             line-height: 0.5; /* Межстрочный интервал */
         }
+        .section-container1 {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            font-size: 14px; /* Размер текста */
+            line-height: 0.5; /* Межстрочный интервал */
+        }
     </style>
 </head>
 <body>
 <div class="section-container">
     <h1>Пролог</h1>
-    <img src="images/space-port.jpg" alt="Welcome Image">
     <p>Ты стоишь в космическом порту и готов подняться на борт своего корабля. Разве ты не об этом мечтал?</p>
     <p>Стать капитаном галактического судна и управлять им вместе со своим экипажем.</p>
     <p>Но перед этим, тебе нужно пройти небольшой квест, чтобы твой экипаж мог довериться своему капитану.</p>
@@ -40,6 +47,9 @@
         <input type="hidden" name="action" value="startGame">
         <button type="submit">Начать игру</button>
     </form>
+</div>
+<div class="section-container1">
+    <img src="images/space-port.jpg" alt="Welcome Image">
 </div>
 </body>
 </html>

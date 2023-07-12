@@ -6,9 +6,10 @@
     <title>Text Quest Game</title>
     <style>
         img {
-            max-width: 700px;
-            max-height: 700px;
+            max-width: 900px;
+            max-height: 900px;
         }
+
         h1 {
             font-size: 20px;
             color: red;
@@ -18,6 +19,7 @@
             font-size: 20px;
             color: blue;
         }
+
         h3 {
             font-size: 18px;
             color: black;
@@ -34,11 +36,24 @@
             padding: 10px;
             margin: 10px;
         }
+
+        .section-container1 {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .section-container2 {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
 <div class="section-container">
-    <img src="images/greeting.jpg" alt="Greeting Image">
     <h1>
         <% String playerName = (String) request.getSession().getAttribute("playerName");
             if (playerName == null || playerName.isEmpty()) {
@@ -65,7 +80,7 @@
             <img src="images/loss.jpg" alt="Loss Image" style="width: 500px; height: 300px;">
     <% } %>
 
-    <form method="post" action="game">
+    <form method="POST" action="game">
         <input type="hidden" name="action" value="continue">
 
         <% String[] options = (String[]) request.getAttribute("options");
@@ -75,6 +90,21 @@
         <% }
         } %>
     </form>
+
 </div>
+
+<form action="game" method="GET">
+    <div class="section-container2" style="position: absolute; top: 10px; right: 10px;">
+        <p>Имя игрока: <%= request.getSession().getAttribute("playerName") %>
+        </p>
+        <p>Количество сыгранных игр: <%= request.getSession().getAttribute("gamesPlayed") %>
+        </p>
+    </div>
+</form>
+
+<div class="section-container1">
+    <img src="images/greeting.jpg" alt="Greeting Image">
+</div>
+
 </body>
 </html>
