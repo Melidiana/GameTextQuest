@@ -23,16 +23,16 @@
             display: inline-block;
             padding: 10px;
             margin: 10px;
-            font-size: 14px; /* Размер текста */
-            line-height: 0.5; /* Межстрочный интервал */
+            font-size: 14px;
+            line-height: 0.5;
         }
         .section-container1 {
             border: 2px solid black;
             display: inline-block;
             padding: 10px;
             margin: 10px;
-            font-size: 14px; /* Размер текста */
-            line-height: 0.5; /* Межстрочный интервал */
+            font-size: 14px;
+            line-height: 0.5;
         }
     </style>
 </head>

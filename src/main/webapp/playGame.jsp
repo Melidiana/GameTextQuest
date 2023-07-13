@@ -94,7 +94,7 @@
 </div>
 
 <form action="game" method="GET">
-    <div class="section-container2" style="position: absolute; top: 10px; right: 10px;">
+    <div class="section-container2" style="position: absolute; bottom: 10px; right: 10px;">
         <p>Имя игрока: <%= request.getSession().getAttribute("playerName") %>
         </p>
         <p>Количество сыгранных игр: <%= request.getSession().getAttribute("gamesPlayed") %>
