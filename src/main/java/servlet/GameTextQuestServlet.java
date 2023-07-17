@@ -8,17 +8,38 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "GameTextQuestServlet", urlPatterns = "/game")
 public class GameTextQuestServlet extends HttpServlet {
-
     private GameTextQuestService gameTextQuestService = new GameTextQuestService();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
+
+        HttpSession session = request.getSession();
+        String playerName = request.getParameter("playerName");
+        String currentName = (String) session.getAttribute("playerName");
+        Integer gamesPlayed = (Integer) session.getAttribute("gamesPlayed");
+
+        if (playerName != null && !playerName.equals(currentName)) {
+            session.setAttribute("playerName", playerName);
+            currentName = playerName;
+            gamesPlayed = 0;
+        }
+
+        if (gamesPlayed == null) {
+            gamesPlayed = 0;
+        }
+
+        gamesPlayed++;
+        session.setAttribute("gamesPlayed", gamesPlayed);
+
+        request.setAttribute("playerName", currentName);
+        request.setAttribute("gamesPlayed", gamesPlayed);
 
         request.getRequestDispatcher("welcome.jsp").forward(request, response);
     }
@@ -28,12 +49,16 @@ public class GameTextQuestServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
 
+        HttpSession session = request.getSession();
+
         String action = request.getParameter("action");
 
         if ("startGame".equals(action)) {
             response.sendRedirect("enterName.jsp");
             return;
         }
+
+        handlePlayerName(request);
 
         String playerName = (String) request.getSession().getAttribute("playerName");
 
@@ -50,6 +75,23 @@ public class GameTextQuestServlet extends HttpServlet {
 
         if (!gameResult.finished()) {
             request.getRequestDispatcher("playGame.jsp").forward(request, response);
+        }
+    }
+
+    private void handlePlayerName(HttpServletRequest request) {
+        String playerName = request.getParameter("playerName");
+        HttpSession session = request.getSession();
+
+        if (playerName != null && !playerName.isEmpty()) {
+            session.setAttribute("playerName", playerName);
+
+            Integer gamesPlayed = (Integer) session.getAttribute("gamesPlayed");
+            if (gamesPlayed == null || !playerName.equals(session.getAttribute("currentName"))) {
+                session.setAttribute("gamesPlayed", 0);
+                session.setAttribute("currentName", playerName);
+            }
+        } else {
+            playerName = (String) session.getAttribute("playerName");
         }
     }
 }

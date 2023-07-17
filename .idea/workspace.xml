@@ -11,8 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="fixed code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/playGame.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/playGame.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -194,6 +194,13 @@
       <workItem from="1689161998417" duration="11424000" />
       <workItem from="1689245083751" duration="7289000" />
       <workItem from="1689253034218" duration="351000" />
+      <workItem from="1689253424421" duration="2146000" />
+      <workItem from="1689339602667" duration="633000" />
+      <workItem from="1689365355306" duration="2000" />
+      <workItem from="1689422951941" duration="14613000" />
+      <workItem from="1689445665275" duration="327000" />
+      <workItem from="1689510940457" duration="3804000" />
+      <workItem from="1689594420518" duration="5312000" />
     </task>
     <task id="LOCAL-00001" summary="add classes, packages and jsp">
       <created>1689080980261</created>
@@ -223,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689187852041</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed code">
+      <created>1689253554004</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689253554004</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +249,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GameTextQuest$Tomcat_9_0_711.ic" NAME="Tomcat 9.0.711 Coverage Results" MODIFIED="1689253353129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GameTextQuest$Tomcat_9_0_711.ic" NAME="Tomcat 9.0.711 Coverage Results" MODIFIED="1689435623039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
