@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="fixed code">
+    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="add Data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/playGame.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/playGame.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +203,7 @@
       <workItem from="1689594420518" duration="7294000" />
       <workItem from="1689624512759" duration="27000" />
       <workItem from="1689624644724" duration="208000" />
-      <workItem from="1689665845694" duration="986000" />
+      <workItem from="1689665845694" duration="6158000" />
     </task>
     <task id="LOCAL-00001" summary="add classes, packages and jsp">
       <created>1689080980261</created>
@@ -246,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689622444630</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add Data">
+      <created>1689667087132</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689667087132</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +263,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add classes, packages and jsp" />
     <MESSAGE value="fixed code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed code" />
+    <MESSAGE value="add Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GameTextQuest$Tomcat_9_0_711.ic" NAME="Tomcat 9.0.711 Coverage Results" MODIFIED="1689435623039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

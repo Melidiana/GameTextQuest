@@ -57,8 +57,21 @@ public class GameTextQuestServlet extends HttpServlet {
             response.sendRedirect("enterName.jsp");
             return;
         }
-
         handlePlayerName(request);
+
+        String actionAgain = request.getParameter("actionAgain");
+
+        if ("startAgain".equals(actionAgain)) {
+            Integer gamesPlayed = (Integer) session.getAttribute("gamesPlayed");
+            if (gamesPlayed != null) {
+                gamesPlayed++;
+            } else {
+                gamesPlayed = 1;
+            }
+            session.setAttribute("gamesPlayed", gamesPlayed);
+            request.getRequestDispatcher("enterName.jsp").forward(request, response);
+            return;
+        }
 
         String playerName = (String) request.getSession().getAttribute("playerName");
 

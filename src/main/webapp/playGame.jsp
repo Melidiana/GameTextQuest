@@ -50,6 +50,10 @@
             padding: 10px;
             margin: 10px;
         }
+
+        .button-container {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -66,8 +70,7 @@
             out.println("Мы рады приветствовать вас, " + playerName + "!");
         %>
     </h1>
-    <h2>Перед вами текстовый квест.</h2>
-    <h3>Вам нужно выбрать ответ на вопрос:</h3>
+
     <p><%= request.getAttribute("message") %></p>
 
     <% Boolean showImage = (Boolean) request.getAttribute("showImage");
@@ -82,7 +85,6 @@
 
     <form method="POST" action="game">
         <input type="hidden" name="action" value="continue">
-
         <% String[] options = (String[]) request.getAttribute("options");
             if (options != null) {
                 for (String option : options) { %>
@@ -90,6 +92,13 @@
         <% }
         } %>
     </form>
+
+    <div class="button-container">
+        <form action="game" method="POST">
+            <input type="hidden" name="actionAgain" value="startAgain">
+            <button type="submit">Начать игру заново</button>
+        </form>
+    </div>
 
 </div>
 
