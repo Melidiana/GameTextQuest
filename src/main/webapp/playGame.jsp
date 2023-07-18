@@ -99,6 +99,9 @@
         </p>
         <p>Количество сыгранных игр: <%= request.getSession().getAttribute("gamesPlayed") %>
         </p>
+        <p>
+            <%= new java.util.Date()%>
+        </p>
     </div>
 </form>
 
