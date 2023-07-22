@@ -4,9 +4,9 @@ public class GameTextQuestResult {
 
     private String message;
     private String[] options;
-    private boolean showImage;
-    private boolean showImage1;
-    private boolean finished;
+    private boolean isVictory;
+    private boolean isLoss;
+    private boolean isFinish;
 
     public String getMessage() {
         return message;
@@ -24,27 +24,23 @@ public class GameTextQuestResult {
         this.options = options;
     }
 
-    public boolean showImage() {
-        return showImage;
+    public boolean isVictory() {
+        return isVictory;
     }
 
-    public void setShowImage(boolean showImage) {
-        this.showImage = showImage;
+    public void setVictory(boolean victory) {
+        isVictory = victory;
     }
 
-    public boolean showImage1() {
-        return showImage1;
+    public boolean isLoss() {
+        return isLoss;
     }
 
-    public void setShowImage1(boolean showImage1) {
-        this.showImage1 = showImage1;
+    public void setLoss(boolean loss) {
+        isLoss = loss;
     }
 
-    public boolean finished() {
-        return finished;
-    }
-
-    public void setFinished(boolean finished) {
-        this.finished = finished;
+    public boolean isFinish() {
+        return isFinish;
     }
 }

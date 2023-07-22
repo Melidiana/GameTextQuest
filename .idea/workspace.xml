@@ -9,9 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="fixed code">
+    <list default="true" id="56983e8f-0439-4f00-a098-5e3f2d07a251" name="Changes" comment="add GameTextQuestServletTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/GameTextQuestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameTextQuestResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/GameTextQuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameTextQuestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/GameTextQuestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/playGame.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/playGame.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +25,23 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="session" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/GameTextQuest.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -58,34 +72,91 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ПК/IdeaProjects/GameTextQuest/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ПК/IdeaProjects/GameTextQuest/src/main/webapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main\webapp\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main\webapp" />
+      <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\test\resources" />
+      <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main\resources" />
       <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main\webapp\views" />
       <recent name="C:\Users\ПК\IdeaProjects\GameTextQuest\src\main" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="testServlet" />
+      <recent name="test" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="servlet" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.711">
+    <configuration name="GameTextQuestServletTest.doGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module3.tretyakova.GameTextQuest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="servlet" />
+      <option name="MAIN_CLASS_NAME" value="servlet.GameTextQuestServletTest" />
+      <option name="METHOD_NAME" value="doGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTextQuestServletTest.doPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module3.tretyakova.GameTextQuest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="servlet" />
+      <option name="MAIN_CLASS_NAME" value="servlet.GameTextQuestServletTest" />
+      <option name="METHOD_NAME" value="doPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.711" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.711" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/module3_tretyakova_GameTextQuest_war/game" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="module3.tretyakova.GameTextQuest:war">
@@ -172,6 +243,12 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameTextQuestServletTest.doPost" />
+        <item itemvalue="JUnit.GameTextQuestServletTest.doGet" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -182,7 +259,25 @@
       <option name="presentableId" value="Default" />
       <updated>1689072222776</updated>
       <workItem from="1689072224174" duration="5707000" />
-      <workItem from="1689078259133" duration="8453000" />
+      <workItem from="1689078259133" duration="12329000" />
+      <workItem from="1689161998417" duration="11424000" />
+      <workItem from="1689245083751" duration="7289000" />
+      <workItem from="1689253034218" duration="351000" />
+      <workItem from="1689253424421" duration="2146000" />
+      <workItem from="1689339602667" duration="633000" />
+      <workItem from="1689365355306" duration="2000" />
+      <workItem from="1689422951941" duration="14613000" />
+      <workItem from="1689445665275" duration="327000" />
+      <workItem from="1689510940457" duration="3804000" />
+      <workItem from="1689594420518" duration="7294000" />
+      <workItem from="1689624512759" duration="27000" />
+      <workItem from="1689624644724" duration="208000" />
+      <workItem from="1689665845694" duration="6315000" />
+      <workItem from="1689699772474" duration="3328000" />
+      <workItem from="1689765486242" duration="5148000" />
+      <workItem from="1689770656493" duration="4053000" />
+      <workItem from="1689945113785" duration="8792000" />
+      <workItem from="1690026548689" duration="3509000" />
     </task>
     <task id="LOCAL-00001" summary="add classes, packages and jsp">
       <created>1689080980261</created>
@@ -198,7 +293,56 @@
       <option name="project" value="LOCAL" />
       <updated>1689086909334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed code">
+      <created>1689090958026</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689090958026</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed code">
+      <created>1689187852041</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689187852041</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed code">
+      <created>1689253554004</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689253554004</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed code">
+      <created>1689622444630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689622444630</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add Data">
+      <created>1689667087132</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689667087132</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed doPost">
+      <created>1689672286052</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689672286052</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add GameTextQuestServletTest">
+      <created>1689954869193</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689954869193</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +351,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add classes, packages and jsp" />
     <MESSAGE value="fixed code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed code" />
+    <MESSAGE value="add Data" />
+    <MESSAGE value="fixed doPost" />
+    <MESSAGE value="add GameTextQuestServletTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add GameTextQuestServletTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GameTextQuest$Tomcat_9_0_711.ic" NAME="Tomcat 9.0.711 Coverage Results" MODIFIED="1689435623039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
