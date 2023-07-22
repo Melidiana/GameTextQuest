@@ -83,10 +83,10 @@ public class GameTextQuestServlet extends HttpServlet {
         GameTextQuestResult gameResult = gameTextQuestService.processPlayerAction(answer);
         request.setAttribute("message", gameResult.getMessage());
         request.setAttribute("options", gameResult.getOptions());
-        request.setAttribute("showImage", gameResult.showImage());
-        request.setAttribute("showImage1", gameResult.showImage1());
+        request.setAttribute("victory", gameResult.isVictory());
+        request.setAttribute("loss", gameResult.isLoss());
 
-        if (!gameResult.finished()) {
+        if (!gameResult.isFinish()) {
             request.getRequestDispatcher("playGame.jsp").forward(request, response);
         }
     }

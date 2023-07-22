@@ -73,13 +73,13 @@
 
     <p><%= request.getAttribute("message") %></p>
 
-    <% Boolean showImage = (Boolean) request.getAttribute("showImage");
-        if (showImage != null && showImage) { %>
+    <% Boolean isVictory = (Boolean) request.getAttribute("victory");
+        if (isVictory != null && isVictory) { %>
     <img src="images/victory.jpg" alt="Victory Image" style="width: 500px; height: 300px;">
         <% } %>
 
-        <% Boolean showImage1 = (Boolean) request.getAttribute("showImage1");
-        if (showImage1 != null && showImage1) { %>
+        <% Boolean isLoss = (Boolean) request.getAttribute("loss");
+        if (isLoss != null && isLoss) { %>
             <img src="images/loss.jpg" alt="Loss Image" style="width: 500px; height: 300px;">
     <% } %>
 
@@ -96,7 +96,7 @@
     <div class="button-container">
         <form action="game" method="POST">
             <input type="hidden" name="actionAgain" value="startAgain">
-            <button type="submit">Начать игру заново</button>
+            <button type="submit">начать игру заново</button>
         </form>
     </div>
 
