@@ -1,14 +1,20 @@
 package service;
 
 import model.GameTextQuestResult;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GameTextQuestServiceTest {
 
+    private GameTextQuestService gameService;
+
+    @BeforeEach
+    void init() {
+        gameService = new GameTextQuestService();
+    }
     @Test
     public void testProcessPlayerActionWithNullAction() {
-        GameTextQuestService gameService = new GameTextQuestService();
         GameTextQuestResult result = gameService.processPlayerAction(null);
 
         assertNotNull(result);
@@ -18,7 +24,6 @@ public class GameTextQuestServiceTest {
 
     @Test
     public void testProcessPlayerActionEnterCaptainCabin() {
-        GameTextQuestService gameService = new GameTextQuestService();
         GameTextQuestResult result = gameService.processPlayerAction("зайти в каюту");
 
         assertNotNull(result);
@@ -28,7 +33,6 @@ public class GameTextQuestServiceTest {
 
     @Test
     public void testPlayerLeavingShip() {
-        GameTextQuestService gameService = new GameTextQuestService();
         GameTextQuestResult result = gameService.processPlayerAction("уйти с корабля");
 
         assertNotNull(result);
