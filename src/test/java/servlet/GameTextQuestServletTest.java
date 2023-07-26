@@ -1,12 +1,17 @@
 package servlet;
 
 import model.GameTextQuestResult;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 import service.GameTextQuestService;
 
 import javax.servlet.RequestDispatcher;
@@ -19,6 +24,7 @@ import java.io.IOException;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
+@MockitoSettings(strictness = Strictness.LENIENT)
 class GameTextQuestServletTest {
 
     @Mock
@@ -39,10 +45,17 @@ class GameTextQuestServletTest {
     @InjectMocks
     GameTextQuestServlet gameTextQuestServlet;
 
-    @Test
-    @DisplayName("Test")
-    void doGet() throws ServletException, IOException {
+    @BeforeEach
+    void init() {
+        MockitoAnnotations.openMocks(this);
+
         when(request.getSession()).thenReturn(session);
+        when(request.getRequestDispatcher(anyString())).thenReturn(dispatcher);
+    }
+
+    @Test
+    @DisplayName("Test that forwarding to welcome.jsp")
+    void doGet() throws ServletException, IOException {
         when(request.getRequestDispatcher("welcome.jsp")).thenReturn(dispatcher);
 
         gameTextQuestServlet.doGet(request, response);
@@ -66,8 +79,6 @@ class GameTextQuestServletTest {
     @Test
     @DisplayName("Test that dispatcher works correctly")
     public void testDoPostStartAgain() throws Exception {
-        when(request.getSession()).thenReturn(session);
-        when(request.getRequestDispatcher(anyString())).thenReturn(dispatcher);
         when(request.getParameter("action")).thenReturn(null);
         when(request.getParameter("playerName")).thenReturn("Diana");
         when(request.getParameter("actionAgain")).thenReturn("startAgain");
@@ -78,10 +89,8 @@ class GameTextQuestServletTest {
     }
 
     @Test
-    @DisplayName("Test")
+    @DisplayName("Test that attributes set correctly")
     public void testDoPostPlayGame() throws Exception {
-        when(request.getSession()).thenReturn(session);
-        when(request.getRequestDispatcher(anyString())).thenReturn(dispatcher);
         when(request.getParameter("action")).thenReturn("playGame");
         when(session.getAttribute("playerName")).thenReturn("Diana");
         when(request.getParameter("playerName")).thenReturn("Diana");
